@@ -144,5 +144,6 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
         Destroy(gameObject);
+        gameManager_S_Ref.gameWon = true;
     }
 }

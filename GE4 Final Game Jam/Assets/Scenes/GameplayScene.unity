@@ -123,6 +123,152 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &16625484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 16625485}
+  - component: {fileID: 16625488}
+  - component: {fileID: 16625487}
+  - component: {fileID: 16625486}
+  - component: {fileID: 16625489}
+  m_Layer: 5
+  m_Name: MainMenuButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &16625485
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16625484}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 787847900}
+  m_Father: {fileID: 1591475492}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -70}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &16625486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16625484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 16625487}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 16625489}
+        m_TargetAssemblyTypeName: LoadLevelScript, Assembly-CSharp
+        m_MethodName: OnLoadLevelButtonBehaviour
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: MenuScene
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &16625487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16625484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &16625488
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16625484}
+  m_CullTransparentMesh: 1
+--- !u!114 &16625489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16625484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5dbdc075e906641a867c2daf03f0d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &206563983
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,6 +362,7 @@ RectTransform:
   m_Children:
   - {fileID: 1738954168}
   - {fileID: 1591475492}
+  - {fileID: 1882774407}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -317,6 +464,87 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &787847899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 787847900}
+  - component: {fileID: 787847902}
+  - component: {fileID: 787847901}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &787847900
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787847899}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 16625485}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &787847901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787847899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Main Menu
+
+'
+--- !u!222 &787847902
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787847899}
+  m_CullTransparentMesh: 1
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -412,7 +640,7 @@ GameObject:
   - component: {fileID: 1537151868}
   - component: {fileID: 1537151867}
   m_Layer: 5
-  m_Name: Text
+  m_Name: EndPhrase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -432,9 +660,9 @@ RectTransform:
   m_Father: {fileID: 1591475492}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -50}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1537151867
@@ -470,7 +698,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: '
+
+'
 --- !u!222 &1537151868
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -496,7 +726,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1591475492
 RectTransform:
   m_ObjectHideFlags: 0
@@ -509,6 +739,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1537151866}
+  - {fileID: 16625485}
   m_Father: {fileID: 206563987}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -530,7 +761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -851,11 +1082,166 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a660866056d025a4e9376f6d4feeb1ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1882774406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1882774407}
+  - component: {fileID: 1882774409}
+  - component: {fileID: 1882774408}
+  m_Layer: 5
+  m_Name: StartPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1882774407
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882774406}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2061641569}
+  m_Father: {fileID: 206563987}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 600, y: 400}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1882774408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882774406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.80784315}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1882774409
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882774406}
+  m_CullTransparentMesh: 1
 --- !u!95 &1906818610 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6220631740900493306, guid: c1f71ffbda9a9e2439e932744b3fe2eb, type: 3}
   m_PrefabInstance: {fileID: 6220631740900493302}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2061641568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2061641569}
+  - component: {fileID: 2061641571}
+  - component: {fileID: 2061641570}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2061641569
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061641568}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1882774407}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 120}
+  m_SizeDelta: {x: 400, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2061641570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061641568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Win condition: finish with under 25 moves'
+--- !u!222 &2061641571
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061641568}
+  m_CullTransparentMesh: 1
 --- !u!33 &32683884834847675
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4568,6 +4954,7 @@ GameObject:
   - component: {fileID: 7451068806906271656}
   - component: {fileID: 7865792726200349192}
   - component: {fileID: 604743662226596152}
+  - component: {fileID: 3156126770809953386}
   m_Layer: 0
   m_Name: Tile (56)
   m_TagString: Tile
@@ -4575,6 +4962,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126770809953386
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126770809953385}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126770837651422
 GameObject:
   m_ObjectHideFlags: 0
@@ -4587,6 +4993,7 @@ GameObject:
   - component: {fileID: 7451068806920598559}
   - component: {fileID: 7865792726231372223}
   - component: {fileID: 604743662222819983}
+  - component: {fileID: 3156126770837651423}
   m_Layer: 0
   m_Name: Tile (50)
   m_TagString: Tile
@@ -4594,6 +5001,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126770837651423
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126770837651422}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126770844437448
 GameObject:
   m_ObjectHideFlags: 0
@@ -4606,6 +5032,7 @@ GameObject:
   - component: {fileID: 7451068806943113225}
   - component: {fileID: 7865792726174213545}
   - component: {fileID: 604743662196078233}
+  - component: {fileID: 3156126770844437449}
   m_Layer: 0
   m_Name: Tile (22)
   m_TagString: Tile
@@ -4613,6 +5040,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126770844437449
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126770844437448}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126770849165036
 GameObject:
   m_ObjectHideFlags: 0
@@ -4625,6 +5071,7 @@ GameObject:
   - component: {fileID: 7451068806930015533}
   - component: {fileID: 7865792726177874061}
   - component: {fileID: 604743662198690749}
+  - component: {fileID: 3156126770849165037}
   m_Layer: 0
   m_Name: Tile (46)
   m_TagString: Tile
@@ -4632,6 +5079,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126770849165037
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126770849165036}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126770866815374
 GameObject:
   m_ObjectHideFlags: 0
@@ -4644,6 +5110,7 @@ GameObject:
   - component: {fileID: 7451068806945835599}
   - component: {fileID: 7865792726193778671}
   - component: {fileID: 604743662182284511}
+  - component: {fileID: 3156126770866815375}
   m_Layer: 0
   m_Name: Tile (6)
   m_TagString: Tile
@@ -4651,6 +5118,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126770866815375
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126770866815374}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126770909004177
 GameObject:
   m_ObjectHideFlags: 0
@@ -4663,6 +5149,7 @@ GameObject:
   - component: {fileID: 7451068807008733776}
   - component: {fileID: 7865792726235508720}
   - component: {fileID: 604743662126300352}
+  - component: {fileID: 3156126770909004178}
   m_Layer: 0
   m_Name: Tile (15)
   m_TagString: Tile
@@ -4670,6 +5157,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126770909004178
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126770909004177}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126770917795165
 GameObject:
   m_ObjectHideFlags: 0
@@ -4682,6 +5188,7 @@ GameObject:
   - component: {fileID: 7451068806999961244}
   - component: {fileID: 7865792726243494716}
   - component: {fileID: 604743662134548492}
+  - component: {fileID: 3156126770917795166}
   m_Layer: 0
   m_Name: Tile (116)
   m_TagString: Tile
@@ -4689,6 +5196,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126770917795166
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126770917795165}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126770928125033
 GameObject:
   m_ObjectHideFlags: 0
@@ -4701,6 +5227,7 @@ GameObject:
   - component: {fileID: 7451068807027330984}
   - component: {fileID: 7865792726258297352}
   - component: {fileID: 604743662111340856}
+  - component: {fileID: 3156126770928125034}
   m_Layer: 0
   m_Name: Tile (19)
   m_TagString: Tile
@@ -4708,6 +5235,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126770928125034
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126770928125033}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126770947060216
 GameObject:
   m_ObjectHideFlags: 0
@@ -4720,6 +5266,7 @@ GameObject:
   - component: {fileID: 7451068806777567801}
   - component: {fileID: 7865792726071631769}
   - component: {fileID: 604743662096829609}
+  - component: {fileID: 3156126770947060217}
   m_Layer: 0
   m_Name: Tile (33)
   m_TagString: Tile
@@ -4727,6 +5274,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126770947060217
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126770947060216}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771006700207
 GameObject:
   m_ObjectHideFlags: 0
@@ -4739,6 +5305,7 @@ GameObject:
   - component: {fileID: 7451068806818591086}
   - component: {fileID: 7865792726062322894}
   - component: {fileID: 604743662053705726}
+  - component: {fileID: 3156126771006700208}
   m_Layer: 0
   m_Name: Tile (95)
   m_TagString: Tile
@@ -4746,6 +5313,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771006700208
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771006700207}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771013198596
 GameObject:
   m_ObjectHideFlags: 0
@@ -4758,6 +5344,7 @@ GameObject:
   - component: {fileID: 7451068806841608389}
   - component: {fileID: 7865792726139669861}
   - component: {fileID: 604743662026530389}
+  - component: {fileID: 3156126771013198597}
   m_Layer: 0
   m_Name: Tile (84)
   m_TagString: Tile
@@ -4765,6 +5352,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771013198597
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771013198596}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771013452789
 GameObject:
   m_ObjectHideFlags: 0
@@ -4777,6 +5383,7 @@ GameObject:
   - component: {fileID: 7451068806841337908}
   - component: {fileID: 7865792726139415956}
   - component: {fileID: 604743662027325092}
+  - component: {fileID: 3156126771013452790}
   m_Layer: 0
   m_Name: Tile (27)
   m_TagString: Tile
@@ -4784,6 +5391,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771013452790
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771013452789}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771068283690
 GameObject:
   m_ObjectHideFlags: 0
@@ -4796,6 +5422,7 @@ GameObject:
   - component: {fileID: 7451068806882795755}
   - component: {fileID: 7865792726126527819}
   - component: {fileID: 604743661983700603}
+  - component: {fileID: 3156126771068283691}
   m_Layer: 0
   m_Name: Tile (113)
   m_TagString: Tile
@@ -4803,6 +5430,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771068283691
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771068283690}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771082409382
 GameObject:
   m_ObjectHideFlags: 0
@@ -4815,6 +5461,7 @@ GameObject:
   - component: {fileID: 7451068806642384487}
   - component: {fileID: 7865792726473120711}
   - component: {fileID: 604743661961513207}
+  - component: {fileID: 3156126771082409383}
   m_Layer: 0
   m_Name: Tile (57)
   m_TagString: Tile
@@ -4822,6 +5469,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771082409383
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771082409382}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771094026476
 GameObject:
   m_ObjectHideFlags: 0
@@ -4834,6 +5500,7 @@ GameObject:
   - component: {fileID: 7451068806655832877}
   - component: {fileID: 7865792726486701709}
   - component: {fileID: 604743661942326717}
+  - component: {fileID: 3156126771094026477}
   m_Layer: 0
   m_Name: Tile (11)
   m_TagString: Tile
@@ -4841,6 +5508,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771094026477
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771094026476}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771111044400
 GameObject:
   m_ObjectHideFlags: 0
@@ -4853,6 +5539,7 @@ GameObject:
   - component: {fileID: 7451068806672330481}
   - component: {fileID: 7865792726436088657}
   - component: {fileID: 604743661925275745}
+  - component: {fileID: 3156126771111044401}
   m_Layer: 0
   m_Name: Tile (48)
   m_TagString: Tile
@@ -4860,6 +5547,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771111044401
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771111044400}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771133019193
 GameObject:
   m_ObjectHideFlags: 0
@@ -4872,6 +5578,7 @@ GameObject:
   - component: {fileID: 7451068806692470776}
   - component: {fileID: 7865792726456097368}
   - component: {fileID: 604743661911984488}
+  - component: {fileID: 3156126771133019194}
   m_Layer: 0
   m_Name: Tile (7)
   m_TagString: Tile
@@ -4879,6 +5586,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771133019194
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771133019193}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771142813985
 GameObject:
   m_ObjectHideFlags: 0
@@ -4891,6 +5617,7 @@ GameObject:
   - component: {fileID: 7451068806703571680}
   - component: {fileID: 7865792726538569536}
   - component: {fileID: 604743661888230512}
+  - component: {fileID: 3156126771142813986}
   m_Layer: 0
   m_Name: Tile (42)
   m_TagString: Tile
@@ -4898,6 +5625,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771142813986
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771142813985}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771146950153
 GameObject:
   m_ObjectHideFlags: 0
@@ -4910,6 +5656,7 @@ GameObject:
   - component: {fileID: 7451068806707711432}
   - component: {fileID: 7865792726542788712}
   - component: {fileID: 604743661892516696}
+  - component: {fileID: 3156126771146950154}
   m_Layer: 0
   m_Name: Tile (143)
   m_TagString: Tile
@@ -4917,6 +5664,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771146950154
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771146950153}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771167875080
 GameObject:
   m_ObjectHideFlags: 0
@@ -4929,6 +5695,7 @@ GameObject:
   - component: {fileID: 7451068806712122313}
   - component: {fileID: 7865792726563847785}
   - component: {fileID: 604743661881322841}
+  - component: {fileID: 3156126771167875081}
   m_Layer: 0
   m_Name: Tile (16)
   m_TagString: Tile
@@ -4936,6 +5703,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771167875081
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771167875080}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771177193476
 GameObject:
   m_ObjectHideFlags: 0
@@ -4948,6 +5734,7 @@ GameObject:
   - component: {fileID: 7451068806736120773}
   - component: {fileID: 7865792726504156773}
   - component: {fileID: 604743661855128917}
+  - component: {fileID: 3156126771177193477}
   m_Layer: 0
   m_Name: Tile (118)
   m_TagString: Tile
@@ -4955,6 +5742,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771177193477
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771177193476}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771188237489
 GameObject:
   m_ObjectHideFlags: 0
@@ -4967,6 +5773,7 @@ GameObject:
   - component: {fileID: 7451068806733533040}
   - component: {fileID: 7865792726518278864}
   - component: {fileID: 604743661868268000}
+  - component: {fileID: 3156126771188237490}
   m_Layer: 0
   m_Name: Tile (149)
   m_TagString: Tile
@@ -4974,6 +5781,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771188237490
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771188237489}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771260141948
 GameObject:
   m_ObjectHideFlags: 0
@@ -4986,6 +5812,7 @@ GameObject:
   - component: {fileID: 7451068806552730301}
   - component: {fileID: 7865792726320553757}
   - component: {fileID: 604743661772246061}
+  - component: {fileID: 3156126771260141949}
   m_Layer: 0
   m_Name: Tile (90)
   m_TagString: Tile
@@ -4993,6 +5820,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771260141949
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771260141948}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771265769955
 GameObject:
   m_ObjectHideFlags: 0
@@ -5005,6 +5851,7 @@ GameObject:
   - component: {fileID: 7451068806559668770}
   - component: {fileID: 7865792726323314562}
   - component: {fileID: 604743661777890482}
+  - component: {fileID: 3156126771265769956}
   m_Layer: 0
   m_Name: Tile (39)
   m_TagString: Tile
@@ -5012,6 +5859,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771265769956
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771265769955}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771294400418
 GameObject:
   m_ObjectHideFlags: 0
@@ -5024,6 +5890,7 @@ GameObject:
   - component: {fileID: 7451068806585410659}
   - component: {fileID: 7865792726420537795}
   - component: {fileID: 604743661737956083}
+  - component: {fileID: 3156126771294400419}
   m_Layer: 0
   m_Name: Tile (99)
   m_TagString: Tile
@@ -5031,6 +5898,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771294400419
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771294400418}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771296446457
 GameObject:
   m_ObjectHideFlags: 0
@@ -5043,6 +5929,7 @@ GameObject:
   - component: {fileID: 7451068806587722808}
   - component: {fileID: 7865792726418459032}
   - component: {fileID: 604743661739874984}
+  - component: {fileID: 3156126771296446458}
   m_Layer: 0
   m_Name: Tile (85)
   m_TagString: Tile
@@ -5050,6 +5937,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771296446458
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771296446457}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771358889980
 GameObject:
   m_ObjectHideFlags: 0
@@ -5062,6 +5968,7 @@ GameObject:
   - component: {fileID: 7451068806365740093}
   - component: {fileID: 7865792726750321053}
   - component: {fileID: 604743662775519917}
+  - component: {fileID: 3156126771358889981}
   m_Layer: 0
   m_Name: Tile (55)
   m_TagString: Tile
@@ -5069,6 +5976,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771358889981
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771358889980}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771397139976
 GameObject:
   m_ObjectHideFlags: 0
@@ -5081,6 +6007,7 @@ GameObject:
   - component: {fileID: 7451068806419715529}
   - component: {fileID: 7865792726720426089}
   - component: {fileID: 604743662713119577}
+  - component: {fileID: 3156126771397139977}
   m_Layer: 0
   m_Name: Tile (97)
   m_TagString: Tile
@@ -5088,6 +6015,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771397139977
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771397139976}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771414356102
 GameObject:
   m_ObjectHideFlags: 0
@@ -5100,6 +6046,7 @@ GameObject:
   - component: {fileID: 7451068806440344391}
   - component: {fileID: 7865792726812294887}
   - component: {fileID: 604743662698884567}
+  - component: {fileID: 3156126771414356103}
   m_Layer: 0
   m_Name: Tile (30)
   m_TagString: Tile
@@ -5107,6 +6054,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771414356103
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771414356102}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771421316887
 GameObject:
   m_ObjectHideFlags: 0
@@ -5119,6 +6085,7 @@ GameObject:
   - component: {fileID: 7451068806429215958}
   - component: {fileID: 7865792726813682038}
   - component: {fileID: 604743662705719878}
+  - component: {fileID: 3156126771421316888}
   m_Layer: 0
   m_Name: Tile (36)
   m_TagString: Tile
@@ -5126,6 +6093,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771421316888
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771421316887}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771429094237
 GameObject:
   m_ObjectHideFlags: 0
@@ -5138,6 +6124,7 @@ GameObject:
   - component: {fileID: 7451068806455081116}
   - component: {fileID: 7865792726822690108}
   - component: {fileID: 604743662679920140}
+  - component: {fileID: 3156126771429094238}
   m_Layer: 0
   m_Name: Tile (115)
   m_TagString: Tile
@@ -5145,6 +6132,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771429094238
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771429094237}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771445466492
 GameObject:
   m_ObjectHideFlags: 0
@@ -5157,6 +6163,7 @@ GameObject:
   - component: {fileID: 7451068806468046525}
   - component: {fileID: 7865792726772755229}
   - component: {fileID: 604743662660663341}
+  - component: {fileID: 3156126771445466493}
   m_Layer: 0
   m_Name: Tile (150)
   m_TagString: Tile
@@ -5164,6 +6171,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771445466493
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771445466492}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771460433027
 GameObject:
   m_ObjectHideFlags: 0
@@ -5176,6 +6202,7 @@ GameObject:
   - component: {fileID: 7451068806465711938}
   - component: {fileID: 7865792726782986978}
   - component: {fileID: 604743662675089874}
+  - component: {fileID: 3156126771460433028}
   m_Layer: 0
   m_Name: Tile (41)
   m_TagString: Tile
@@ -5183,6 +6210,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771460433028
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771460433027}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771466400144
 GameObject:
   m_ObjectHideFlags: 0
@@ -5195,6 +6241,7 @@ GameObject:
   - component: {fileID: 7451068806488980049}
   - component: {fileID: 7865792726793805809}
   - component: {fileID: 604743662648151233}
+  - component: {fileID: 3156126771466400145}
   m_Layer: 0
   m_Name: Tile (10)
   m_TagString: Tile
@@ -5202,6 +6249,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771466400145
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771466400144}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771501741409
 GameObject:
   m_ObjectHideFlags: 0
@@ -5214,6 +6280,7 @@ GameObject:
   - component: {fileID: 7451068806256410272}
   - component: {fileID: 7865792726624213760}
   - component: {fileID: 604743662615857200}
+  - component: {fileID: 3156126771501741410}
   m_Layer: 0
   m_Name: Tile (98)
   m_TagString: Tile
@@ -5221,6 +6288,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771501741410
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771501741409}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771509117138
 GameObject:
   m_ObjectHideFlags: 0
@@ -5233,6 +6319,7 @@ GameObject:
   - component: {fileID: 7451068806249106195}
   - component: {fileID: 7865792726633639603}
   - component: {fileID: 604743662625357187}
+  - component: {fileID: 3156126771509117139}
   m_Layer: 0
   m_Name: Tile (24)
   m_TagString: Tile
@@ -5240,6 +6327,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771509117139
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771509117138}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771550149237
 GameObject:
   m_ObjectHideFlags: 0
@@ -5252,6 +6358,7 @@ GameObject:
   - component: {fileID: 7451068806304551348}
   - component: {fileID: 7865792726676501524}
   - component: {fileID: 604743662564140836}
+  - component: {fileID: 3156126771550149238}
   m_Layer: 0
   m_Name: Tile (146)
   m_TagString: Tile
@@ -5259,6 +6366,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771550149238
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771550149237}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771556441734
 GameObject:
   m_ObjectHideFlags: 0
@@ -5271,6 +6397,7 @@ GameObject:
   - component: {fileID: 7451068806294066503}
   - component: {fileID: 7865792726678597863}
   - component: {fileID: 604743662570431447}
+  - component: {fileID: 3156126771556441735}
   m_Layer: 0
   m_Name: Tile (94)
   m_TagString: Tile
@@ -5278,6 +6405,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771556441735
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771556441734}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771565036172
 GameObject:
   m_ObjectHideFlags: 0
@@ -5290,6 +6436,7 @@ GameObject:
   - component: {fileID: 7451068806318917965}
   - component: {fileID: 7865792726686739693}
   - component: {fileID: 604743662544961501}
+  - component: {fileID: 3156126771565036173}
   m_Layer: 0
   m_Name: Tile (58)
   m_TagString: Tile
@@ -5297,6 +6444,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771565036173
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771565036172}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771578465925
 GameObject:
   m_ObjectHideFlags: 0
@@ -5309,6 +6475,7 @@ GameObject:
   - component: {fileID: 7451068806334965060}
   - component: {fileID: 7865792726639788260}
   - component: {fileID: 604743662527435732}
+  - component: {fileID: 3156126771578465926}
   m_Layer: 0
   m_Name: Tile (83)
   m_TagString: Tile
@@ -5316,6 +6483,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771578465926
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771578465925}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771622346217
 GameObject:
   m_ObjectHideFlags: 0
@@ -5328,6 +6514,7 @@ GameObject:
   - component: {fileID: 7451068806093895208}
   - component: {fileID: 7865792727015347080}
   - component: {fileID: 604743662503674040}
+  - component: {fileID: 3156126771622346218}
   m_Layer: 0
   m_Name: Tile (144)
   m_TagString: Tile
@@ -5335,6 +6522,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771622346218
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771622346217}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771626067306
 GameObject:
   m_ObjectHideFlags: 0
@@ -5347,6 +6553,7 @@ GameObject:
   - component: {fileID: 7451068806094474923}
   - component: {fileID: 7865792727020006155}
   - component: {fileID: 604743662505195579}
+  - component: {fileID: 3156126771626067307}
   m_Layer: 0
   m_Name: Tile (23)
   m_TagString: Tile
@@ -5354,6 +6561,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771626067307
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771626067306}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771637152642
 GameObject:
   m_ObjectHideFlags: 0
@@ -5366,6 +6592,7 @@ GameObject:
   - component: {fileID: 7451068806108438595}
   - component: {fileID: 7865792727034086883}
   - component: {fileID: 604743662485460691}
+  - component: {fileID: 3156126771637152643}
   m_Layer: 0
   m_Name: Tile (142)
   m_TagString: Tile
@@ -5373,6 +6600,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771637152643
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771637152642}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771671532206
 GameObject:
   m_ObjectHideFlags: 0
@@ -5385,6 +6631,7 @@ GameObject:
   - component: {fileID: 7451068806141249903}
   - component: {fileID: 7865792726999674063}
   - component: {fileID: 604743662449999871}
+  - component: {fileID: 3156126771671532207}
   m_Layer: 0
   m_Name: Tile (72)
   m_TagString: Tile
@@ -5392,6 +6639,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771671532207
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771671532206}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771685745716
 GameObject:
   m_ObjectHideFlags: 0
@@ -5404,6 +6670,7 @@ GameObject:
   - component: {fileID: 7451068806173290485}
   - component: {fileID: 7865792727077767765}
   - component: {fileID: 604743662432737637}
+  - component: {fileID: 3156126771685745717}
   m_Layer: 0
   m_Name: Tile (25)
   m_TagString: Tile
@@ -5411,6 +6678,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771685745717
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771685745716}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771708762580
 GameObject:
   m_ObjectHideFlags: 0
@@ -5423,6 +6709,7 @@ GameObject:
   - component: {fileID: 7451068806179525141}
   - component: {fileID: 7865792727105058741}
   - component: {fileID: 604743662422205573}
+  - component: {fileID: 3156126771708762581}
   m_Layer: 0
   m_Name: Tile (93)
   m_TagString: Tile
@@ -5430,6 +6717,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771708762581
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771708762580}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771755854926
 GameObject:
   m_ObjectHideFlags: 0
@@ -5442,6 +6748,7 @@ GameObject:
   - component: {fileID: 7451068805956347791}
   - component: {fileID: 7865792726881796655}
   - component: {fileID: 604743662367052063}
+  - component: {fileID: 3156126771755854927}
   m_Layer: 0
   m_Name: Tile (51)
   m_TagString: Tile
@@ -5449,6 +6756,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771755854927
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771755854926}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771796792757
 GameObject:
   m_ObjectHideFlags: 0
@@ -5461,6 +6787,7 @@ GameObject:
   - component: {fileID: 7451068806015901300}
   - component: {fileID: 7865792726857677780}
   - component: {fileID: 604743662309042404}
+  - component: {fileID: 3156126771796792758}
   m_Layer: 0
   m_Name: Tile (100)
   m_TagString: Tile
@@ -5468,6 +6795,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771796792758
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771796792757}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771820622660
 GameObject:
   m_ObjectHideFlags: 0
@@ -5480,6 +6826,7 @@ GameObject:
   - component: {fileID: 7451068806038419589}
   - component: {fileID: 7865792726942899493}
   - component: {fileID: 604743662297075221}
+  - component: {fileID: 3156126771820622661}
   m_Layer: 0
   m_Name: Tile (120)
   m_TagString: Tile
@@ -5487,6 +6834,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771820622661
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771820622660}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771829170623
 GameObject:
   m_ObjectHideFlags: 0
@@ -5499,6 +6865,7 @@ GameObject:
   - component: {fileID: 7451068806029666942}
   - component: {fileID: 7865792726951120862}
   - component: {fileID: 604743662306286830}
+  - component: {fileID: 3156126771829170624}
   m_Layer: 0
   m_Name: Tile (29)
   m_TagString: Tile
@@ -5506,6 +6873,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771829170624
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771829170623}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771844588197
 GameObject:
   m_ObjectHideFlags: 0
@@ -5518,6 +6904,7 @@ GameObject:
   - component: {fileID: 7451068806047967588}
   - component: {fileID: 7865792726969224388}
   - component: {fileID: 604743662289592308}
+  - component: {fileID: 3156126771844588198}
   m_Layer: 0
   m_Name: Tile (59)
   m_TagString: Tile
@@ -5525,6 +6912,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771844588198
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771844588197}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771847793435
 GameObject:
   m_ObjectHideFlags: 0
@@ -5537,6 +6943,7 @@ GameObject:
   - component: {fileID: 7451068806065586394}
   - component: {fileID: 7865792726907299194}
   - component: {fileID: 604743662257288778}
+  - component: {fileID: 3156126771847793436}
   m_Layer: 0
   m_Name: Tile (145)
   m_TagString: Tile
@@ -5544,6 +6951,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771847793436
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771847793435}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771920069033
 GameObject:
   m_ObjectHideFlags: 0
@@ -5556,6 +6982,7 @@ GameObject:
   - component: {fileID: 7451068808019274344}
   - component: {fileID: 7865792725098614728}
   - component: {fileID: 604743663271042296}
+  - component: {fileID: 3156126771920069034}
   m_Layer: 0
   m_Name: Tile (14)
   m_TagString: Tile
@@ -5563,6 +6990,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771920069034
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771920069033}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126771967000263
 GameObject:
   m_ObjectHideFlags: 0
@@ -5575,6 +7021,7 @@ GameObject:
   - component: {fileID: 7451068808064627974}
   - component: {fileID: 7865792725211074726}
   - component: {fileID: 604743663215723414}
+  - component: {fileID: 3156126771967000264}
   m_Layer: 0
   m_Name: Tile (111)
   m_TagString: Tile
@@ -5582,6 +7029,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126771967000264
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126771967000263}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772000161413
 GameObject:
   m_ObjectHideFlags: 0
@@ -5594,6 +7060,7 @@ GameObject:
   - component: {fileID: 7451068808098575684}
   - component: {fileID: 7865792725177913572}
   - component: {fileID: 604743663183872980}
+  - component: {fileID: 3156126772000161414}
   m_Layer: 0
   m_Name: Tile (91)
   m_TagString: Tile
@@ -5601,6 +7068,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772000161414
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772000161413}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772006450139
 GameObject:
   m_ObjectHideFlags: 0
@@ -5613,6 +7099,7 @@ GameObject:
   - component: {fileID: 7451068808088090650}
   - component: {fileID: 7865792725188402618}
   - component: {fileID: 604743663190167178}
+  - component: {fileID: 3156126772006450140}
   m_Layer: 0
   m_Name: Tile (32)
   m_TagString: Tile
@@ -5620,6 +7107,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772006450140
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772006450139}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772021141422
 GameObject:
   m_ObjectHideFlags: 0
@@ -5632,6 +7138,7 @@ GameObject:
   - component: {fileID: 7451068807851119727}
   - component: {fileID: 7865792724997517775}
   - component: {fileID: 604743663171314431}
+  - component: {fileID: 3156126772021141423}
   m_Layer: 0
   m_Name: Tile (4)
   m_TagString: Tile
@@ -5639,6 +7146,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772021141423
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772021141422}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772030994010
 GameObject:
   m_ObjectHideFlags: 0
@@ -5651,6 +7177,7 @@ GameObject:
   - component: {fileID: 7451068807862287771}
   - component: {fileID: 7865792725012863035}
   - component: {fileID: 604743663147600651}
+  - component: {fileID: 3156126772030994011}
   m_Layer: 0
   m_Name: Tile (17)
   m_TagString: Tile
@@ -5658,6 +7185,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772030994011
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772030994010}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772036900409
 GameObject:
   m_ObjectHideFlags: 0
@@ -5670,6 +7216,7 @@ GameObject:
   - component: {fileID: 7451068807864524280}
   - component: {fileID: 7865792725015312472}
   - component: {fileID: 604743663151033192}
+  - component: {fileID: 3156126772036900410}
   m_Layer: 0
   m_Name: Tile (88)
   m_TagString: Tile
@@ -5677,6 +7224,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772036900410
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772036900409}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772048516601
 GameObject:
   m_ObjectHideFlags: 0
@@ -5689,6 +7255,7 @@ GameObject:
   - component: {fileID: 7451068807878237752}
   - component: {fileID: 7865792724961786776}
   - component: {fileID: 604743663131060392}
+  - component: {fileID: 3156126772048516602}
   m_Layer: 0
   m_Name: Tile (86)
   m_TagString: Tile
@@ -5696,6 +7263,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772048516602
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772048516601}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772134300027
 GameObject:
   m_ObjectHideFlags: 0
@@ -5708,6 +7294,7 @@ GameObject:
   - component: {fileID: 7451068807964279482}
   - component: {fileID: 7865792725043767066}
   - component: {fileID: 604743663049733162}
+  - component: {fileID: 3156126772134300028}
   m_Layer: 0
   m_Name: Tile (2)
   m_TagString: Tile
@@ -5715,6 +7302,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772134300028
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772134300027}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772165105813
 GameObject:
   m_ObjectHideFlags: 0
@@ -5727,6 +7333,7 @@ GameObject:
   - component: {fileID: 7451068807727960916}
   - component: {fileID: 7865792725415622388}
   - component: {fileID: 604743663013422532}
+  - component: {fileID: 3156126772165105814}
   m_Layer: 0
   m_Name: Tile (35)
   m_TagString: Tile
@@ -5734,6 +7341,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772165105814
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772165105813}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772170590904
 GameObject:
   m_ObjectHideFlags: 0
@@ -5746,6 +7372,7 @@ GameObject:
   - component: {fileID: 7451068807730823545}
   - component: {fileID: 7865792725418484953}
   - component: {fileID: 604743663016294377}
+  - component: {fileID: 3156126772170590905}
   m_Layer: 0
   m_Name: Tile (101)
   m_TagString: Tile
@@ -5753,6 +7380,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772170590905
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772170590904}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772191807033
 GameObject:
   m_ObjectHideFlags: 0
@@ -5765,6 +7411,7 @@ GameObject:
   - component: {fileID: 7451068807735004664}
   - component: {fileID: 7865792725372135512}
   - component: {fileID: 604743663003827048}
+  - component: {fileID: 3156126772191807034}
   m_Layer: 0
   m_Name: Tile (43)
   m_TagString: Tile
@@ -5772,6 +7419,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772191807034
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772191807033}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772194972453
 GameObject:
   m_ObjectHideFlags: 0
@@ -5784,6 +7450,7 @@ GameObject:
   - component: {fileID: 7451068807740004580}
   - component: {fileID: 7865792725377334596}
   - component: {fileID: 604743663009738356}
+  - component: {fileID: 3156126772194972454}
   m_Layer: 0
   m_Name: Tile (49)
   m_TagString: Tile
@@ -5791,6 +7458,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772194972454
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772194972453}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772199475842
 GameObject:
   m_ObjectHideFlags: 0
@@ -5803,6 +7489,7 @@ GameObject:
   - component: {fileID: 7451068807760757059}
   - component: {fileID: 7865792725381244131}
   - component: {fileID: 604743662980167635}
+  - component: {fileID: 3156126772199475843}
   m_Layer: 0
   m_Name: Tile (28)
   m_TagString: Tile
@@ -5810,6 +7497,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772199475843
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772199475842}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772229044011
 GameObject:
   m_ObjectHideFlags: 0
@@ -5822,6 +7528,7 @@ GameObject:
   - component: {fileID: 7451068807773289706}
   - component: {fileID: 7865792725477513546}
   - component: {fileID: 604743662976027258}
+  - component: {fileID: 3156126772229044012}
   m_Layer: 0
   m_Name: Tile (53)
   m_TagString: Tile
@@ -5829,6 +7536,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772229044012
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772229044011}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772229177030
 GameObject:
   m_ObjectHideFlags: 0
@@ -5841,6 +7567,7 @@ GameObject:
   - component: {fileID: 7451068807773156615}
   - component: {fileID: 7865792725477380263}
   - component: {fileID: 604743662974583703}
+  - component: {fileID: 3156126772229177031}
   m_Layer: 0
   m_Name: Tile (38)
   m_TagString: Tile
@@ -5848,6 +7575,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772229177031
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772229177030}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772243579467
 GameObject:
   m_ObjectHideFlags: 0
@@ -5860,6 +7606,7 @@ GameObject:
   - component: {fileID: 7451068807788087690}
   - component: {fileID: 7865792725488135210}
   - component: {fileID: 604743662957035290}
+  - component: {fileID: 3156126772243579468}
   m_Layer: 0
   m_Name: Tile (34)
   m_TagString: Tile
@@ -5867,6 +7614,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772243579468
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772243579467}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772289503803
 GameObject:
   m_ObjectHideFlags: 0
@@ -5879,6 +7645,7 @@ GameObject:
   - component: {fileID: 7451068807582616058}
   - component: {fileID: 7865792725266017370}
   - component: {fileID: 604743662902951786}
+  - component: {fileID: 3156126772289503804}
   m_Layer: 0
   m_Name: Tile (40)
   m_TagString: Tile
@@ -5886,6 +7653,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772289503804
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772289503803}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772333679716
 GameObject:
   m_ObjectHideFlags: 0
@@ -5898,6 +7684,7 @@ GameObject:
   - component: {fileID: 7451068807626530725}
   - component: {fileID: 7865792725247015429}
   - component: {fileID: 604743662845929781}
+  - component: {fileID: 3156126772333679717}
   m_Layer: 0
   m_Name: Tile (9)
   m_TagString: Tile
@@ -5905,6 +7692,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772333679717
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772333679716}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772339690901
 GameObject:
   m_ObjectHideFlags: 0
@@ -5917,6 +7723,7 @@ GameObject:
   - component: {fileID: 7451068807633061460}
   - component: {fileID: 7865792725249418228}
   - component: {fileID: 604743662852468932}
+  - component: {fileID: 3156126772339690902}
   m_Layer: 0
   m_Name: Tile (87)
   m_TagString: Tile
@@ -5924,6 +7731,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772339690902
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772339690901}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772340925687
 GameObject:
   m_ObjectHideFlags: 0
@@ -5936,6 +7762,7 @@ GameObject:
   - component: {fileID: 7451068807631941430}
   - component: {fileID: 7865792725248150166}
   - component: {fileID: 604743662851463590}
+  - component: {fileID: 3156126772340925688}
   m_Layer: 0
   m_Name: Tile (8)
   m_TagString: Tile
@@ -5943,6 +7770,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772340925688
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772340925687}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772397545589
 GameObject:
   m_ObjectHideFlags: 0
@@ -5955,6 +7801,7 @@ GameObject:
   - component: {fileID: 7451068807671780276}
   - component: {fileID: 7865792725308978708}
   - component: {fileID: 604743662807426340}
+  - component: {fileID: 3156126772397545590}
   m_Layer: 0
   m_Name: Tile (96)
   m_TagString: Tile
@@ -5962,6 +7809,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772397545590
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772397545589}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772432587357
 GameObject:
   m_ObjectHideFlags: 0
@@ -5974,6 +7840,7 @@ GameObject:
   - component: {fileID: 7451068807439696284}
   - component: {fileID: 7865792725676614716}
   - component: {fileID: 604743663849109260}
+  - component: {fileID: 3156126772432587358}
   m_Layer: 0
   m_Name: Tile (82)
   m_TagString: Tile
@@ -5981,6 +7848,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772432587358
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772432587357}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772438321758
 GameObject:
   m_ObjectHideFlags: 0
@@ -5993,6 +7879,7 @@ GameObject:
   - component: {fileID: 7451068807463256479}
   - component: {fileID: 7865792725687657535}
   - component: {fileID: 604743663823386383}
+  - component: {fileID: 3156126772438321759}
   m_Layer: 0
   m_Name: Tile (117)
   m_TagString: Tile
@@ -6000,6 +7887,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772438321759
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772438321758}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772489658795
 GameObject:
   m_ObjectHideFlags: 0
@@ -6012,6 +7918,7 @@ GameObject:
   - component: {fileID: 7451068807512500842}
   - component: {fileID: 7865792725736951754}
   - component: {fileID: 604743663772081402}
+  - component: {fileID: 3156126772489658796}
   m_Layer: 0
   m_Name: Tile (26)
   m_TagString: Tile
@@ -6019,6 +7926,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772489658796
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772489658795}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772490441248
 GameObject:
   m_ObjectHideFlags: 0
@@ -6031,6 +7957,7 @@ GameObject:
   - component: {fileID: 7451068807515904481}
   - component: {fileID: 7865792725736176705}
   - component: {fileID: 604743663774445425}
+  - component: {fileID: 3156126772490441249}
   m_Layer: 0
   m_Name: Tile (60)
   m_TagString: Tile
@@ -6038,6 +7965,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772490441249
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772490441248}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772515840223
 GameObject:
   m_ObjectHideFlags: 0
@@ -6050,6 +7996,7 @@ GameObject:
   - component: {fileID: 7451068807524002590}
   - component: {fileID: 7865792725761101502}
   - component: {fileID: 604743663766805902}
+  - component: {fileID: 3156126772515840224}
   m_Layer: 0
   m_Name: Tile (52)
   m_TagString: Tile
@@ -6057,6 +8004,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772515840224
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772515840223}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772517283845
 GameObject:
   m_ObjectHideFlags: 0
@@ -6069,6 +8035,7 @@ GameObject:
   - component: {fileID: 7451068807522558916}
   - component: {fileID: 7865792725759657572}
   - component: {fileID: 604743663765624148}
+  - component: {fileID: 3156126772517283846}
   m_Layer: 0
   m_Name: Tile (21)
   m_TagString: Tile
@@ -6076,6 +8043,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772517283846
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772517283845}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772517517516
 GameObject:
   m_ObjectHideFlags: 0
@@ -6088,6 +8074,7 @@ GameObject:
   - component: {fileID: 7451068807543501581}
   - component: {fileID: 7865792725700712109}
   - component: {fileID: 604743663734785437}
+  - component: {fileID: 3156126772517517517}
   m_Layer: 0
   m_Name: Tile (3)
   m_TagString: Tile
@@ -6095,6 +8082,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772517517517
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772517517516}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772541464837
 GameObject:
   m_ObjectHideFlags: 0
@@ -6107,6 +8113,7 @@ GameObject:
   - component: {fileID: 7451068807565617860}
   - component: {fileID: 7865792725718699876}
   - component: {fileID: 604743663724665940}
+  - component: {fileID: 3156126772541464838}
   m_Layer: 0
   m_Name: Tile (12)
   m_TagString: Tile
@@ -6114,6 +8121,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772541464838
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772541464837}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772579704723
 GameObject:
   m_ObjectHideFlags: 0
@@ -6126,6 +8152,7 @@ GameObject:
   - component: {fileID: 7451068807317591122}
   - component: {fileID: 7865792725554639346}
   - component: {fileID: 604743663693832898}
+  - component: {fileID: 3156126772579704724}
   m_Layer: 0
   m_Name: Tile (148)
   m_TagString: Tile
@@ -6133,6 +8160,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772579704724
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772579704723}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772581480166
 GameObject:
   m_ObjectHideFlags: 0
@@ -6145,6 +8191,7 @@ GameObject:
   - component: {fileID: 7451068807320157479}
   - component: {fileID: 7865792725561251975}
   - component: {fileID: 604743663695989687}
+  - component: {fileID: 3156126772581480167}
   m_Layer: 0
   m_Name: Tile (5)
   m_TagString: Tile
@@ -6152,6 +8199,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772581480167
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772581480166}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772608280732
 GameObject:
   m_ObjectHideFlags: 0
@@ -6164,6 +8230,7 @@ GameObject:
   - component: {fileID: 7451068807364518749}
   - component: {fileID: 7865792725517666045}
   - component: {fileID: 604743663657915853}
+  - component: {fileID: 3156126772608280733}
   m_Layer: 0
   m_Name: Tile (37)
   m_TagString: Tile
@@ -6171,6 +8238,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772608280733
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772608280732}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772621403254
 GameObject:
   m_ObjectHideFlags: 0
@@ -6183,6 +8269,7 @@ GameObject:
   - component: {fileID: 7451068807376596919}
   - component: {fileID: 7865792725596850711}
   - component: {fileID: 604743663635388711}
+  - component: {fileID: 3156126772621403255}
   m_Layer: 0
   m_Name: Tile (44)
   m_TagString: Tile
@@ -6190,6 +8277,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772621403255
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772621403254}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772625911624
 GameObject:
   m_ObjectHideFlags: 0
@@ -6202,6 +8308,7 @@ GameObject:
   - component: {fileID: 7451068807380575369}
   - component: {fileID: 7865792725600698665}
   - component: {fileID: 604743663639237145}
+  - component: {fileID: 3156126772625911625}
   m_Layer: 0
   m_Name: Tile (147)
   m_TagString: Tile
@@ -6209,6 +8316,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772625911625
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772625911624}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772654573051
 GameObject:
   m_ObjectHideFlags: 0
@@ -6221,6 +8347,7 @@ GameObject:
   - component: {fileID: 7451068807410552378}
   - component: {fileID: 7865792725563648922}
   - component: {fileID: 604743663602907306}
+  - component: {fileID: 3156126772654573052}
   m_Layer: 0
   m_Name: Tile (47)
   m_TagString: Tile
@@ -6228,6 +8355,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772654573052
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772654573051}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772660487745
 GameObject:
   m_ObjectHideFlags: 0
@@ -6240,6 +8386,7 @@ GameObject:
   - component: {fileID: 7451068807400476032}
   - component: {fileID: 7865792725574543392}
   - component: {fileID: 604743663608822544}
+  - component: {fileID: 3156126772660487746}
   m_Layer: 0
   m_Name: Tile (141)
   m_TagString: Tile
@@ -6247,6 +8394,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772660487746
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772660487745}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772680763080
 GameObject:
   m_ObjectHideFlags: 0
@@ -6259,6 +8425,7 @@ GameObject:
   - component: {fileID: 7451068807417867529}
   - component: {fileID: 7865792725587789993}
   - component: {fileID: 604743663593560985}
+  - component: {fileID: 3156126772680763081}
   m_Layer: 0
   m_Name: Tile (20)
   m_TagString: Tile
@@ -6266,6 +8433,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772680763081
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772680763080}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772708617702
 GameObject:
   m_ObjectHideFlags: 0
@@ -6278,6 +8464,7 @@ GameObject:
   - component: {fileID: 7451068807197206055}
   - component: {fileID: 7865792725954200455}
   - component: {fileID: 604743663556268215}
+  - component: {fileID: 3156126772708617703}
   m_Layer: 0
   m_Name: Tile (54)
   m_TagString: Tile
@@ -6285,6 +8472,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772708617703
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772708617702}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772716282121
 GameObject:
   m_ObjectHideFlags: 0
@@ -6297,6 +8503,7 @@ GameObject:
   - component: {fileID: 7451068807185214152}
   - component: {fileID: 7865792725963313000}
   - component: {fileID: 604743663562497112}
+  - component: {fileID: 3156126772716282122}
   m_Layer: 0
   m_Name: Tile (45)
   m_TagString: Tile
@@ -6304,6 +8511,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772716282122
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772716282121}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772734849772
 GameObject:
   m_ObjectHideFlags: 0
@@ -6316,6 +8542,7 @@ GameObject:
   - component: {fileID: 7451068807204567341}
   - component: {fileID: 7865792725911231629}
   - component: {fileID: 604743663546847165}
+  - component: {fileID: 3156126772734849773}
   m_Layer: 0
   m_Name: Tile (114)
   m_TagString: Tile
@@ -6323,6 +8550,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772734849773
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772734849772}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772767057177
 GameObject:
   m_ObjectHideFlags: 0
@@ -6335,6 +8581,7 @@ GameObject:
   - component: {fileID: 7451068807239397080}
   - component: {fileID: 7865792726013234040}
   - component: {fileID: 604743663514572872}
+  - component: {fileID: 3156126772767057178}
   m_Layer: 0
   m_Name: Tile (119)
   m_TagString: Tile
@@ -6342,6 +8589,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772767057178
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772767057177}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772768788671
 GameObject:
   m_ObjectHideFlags: 0
@@ -6354,6 +8620,7 @@ GameObject:
   - component: {fileID: 7451068807237720958}
   - component: {fileID: 7865792726011510494}
   - component: {fileID: 604743663514217966}
+  - component: {fileID: 3156126772768788672}
   m_Layer: 0
   m_Name: Tile (31)
   m_TagString: Tile
@@ -6361,6 +8628,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772768788672
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772768788671}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772807088855
 GameObject:
   m_ObjectHideFlags: 0
@@ -6373,6 +8659,7 @@ GameObject:
   - component: {fileID: 7451068807295676694}
   - component: {fileID: 7865792725989954742}
   - component: {fileID: 604743663453538182}
+  - component: {fileID: 3156126772807088856}
   m_Layer: 0
   m_Name: Tile (112)
   m_TagString: Tile
@@ -6380,6 +8667,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772807088856
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772807088855}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772903502738
 GameObject:
   m_ObjectHideFlags: 0
@@ -6392,6 +8698,7 @@ GameObject:
   - component: {fileID: 7451068807123920979}
   - component: {fileID: 7865792725885177331}
   - component: {fileID: 604743663349030595}
+  - component: {fileID: 3156126772903502739}
   m_Layer: 0
   m_Name: Tile (13)
   m_TagString: Tile
@@ -6399,6 +8706,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772903502739
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772903502738}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772921252423
 GameObject:
   m_ObjectHideFlags: 0
@@ -6411,6 +8737,7 @@ GameObject:
   - component: {fileID: 7451068807139570054}
   - component: {fileID: 7865792725833847846}
   - component: {fileID: 604743663331247894}
+  - component: {fileID: 3156126772921252424}
   m_Layer: 0
   m_Name: Tile (18)
   m_TagString: Tile
@@ -6418,6 +8745,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772921252424
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772921252423}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3156126772940789215
 GameObject:
   m_ObjectHideFlags: 0
@@ -6430,6 +8776,7 @@ GameObject:
   - component: {fileID: 7451068807157800478}
   - component: {fileID: 7865792725847899070}
   - component: {fileID: 604743663316723854}
+  - component: {fileID: 3156126772940789216}
   m_Layer: 0
   m_Name: Tile (89)
   m_TagString: Tile
@@ -6437,6 +8784,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3156126772940789216
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156126772940789215}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3484914608994875580
 GameObject:
   m_ObjectHideFlags: 0
@@ -6449,6 +8815,7 @@ GameObject:
   - component: {fileID: 9004864264718742397}
   - component: {fileID: 8554832699247482589}
   - component: {fileID: 1437858726976439789}
+  - component: {fileID: 3484914608994875581}
   m_Layer: 0
   m_Name: Tile (1)
   m_TagString: Tile
@@ -6456,6 +8823,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3484914608994875581
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3484914608994875580}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3083ff721751543ba2505fea042382, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &4613419778949061392
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6516,11 +8902,124 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 6185985720856642636, guid: 117c3aac44f38144ba3a339bd03cdff8, type: 3}
+      propertyPath: endPhrase_GO
+      value: 
+      objectReference: {fileID: 1537151865}
+    - target: {fileID: 6185985720856642636, guid: 117c3aac44f38144ba3a339bd03cdff8, type: 3}
+      propertyPath: startPanel_GO
+      value: 
+      objectReference: {fileID: 1882774406}
+    - target: {fileID: 6185985720856642636, guid: 117c3aac44f38144ba3a339bd03cdff8, type: 3}
       propertyPath: moveCounter_GO
       value: 
       objectReference: {fileID: 1738954167}
+    - target: {fileID: 6185985720856642636, guid: 117c3aac44f38144ba3a339bd03cdff8, type: 3}
+      propertyPath: gameOverPanel_GO
+      value: 
+      objectReference: {fileID: 1591475491}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 117c3aac44f38144ba3a339bd03cdff8, type: 3}
+--- !u!1 &4613419778949061393 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2765183660399596056, guid: 117c3aac44f38144ba3a339bd03cdff8, type: 3}
+  m_PrefabInstance: {fileID: 4613419778949061392}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &4613419778949061394
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4613419778949061393}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a92c0061788ed064cb06e1176d0d3ade, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &5039740777219945119
 Transform:
   m_ObjectHideFlags: 0
