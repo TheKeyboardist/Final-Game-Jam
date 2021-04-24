@@ -113,7 +113,10 @@ public class PlayerController : MonoBehaviour
             }
             if (Physics.Raycast(transform.position, Vector3.down, out hit) && hit.transform.tag == "FinishTag")
             {
-
+                animFinished = false;
+                animator.GetComponent<Animator>().enabled = true;
+                animator.SetTrigger("OutroTrigger");
+                StartCoroutine(DelayEnd());
             }
 
                 //changing frontend parameters
@@ -137,4 +140,9 @@ public class PlayerController : MonoBehaviour
         animFinished = true;
     }
 
+    IEnumerator DelayEnd()
+    {
+        yield return new WaitForSeconds(1.5f);
+        Destroy(gameObject);
+    }
 }
